@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body {font-family: sans-serif}
+        input {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> Cupcakes! </h1>
+
+    <div class="cupcake-list">
+    </div>
+ 
+    <br>
+    <h4>Add a cupcake?</h4>
+    <form>
+        <label for="flavor">Flavor:</label>
+        <input type="text" id="flavor" name="flavor"><br>
+        <label for="size">Size:</label>
+        <input type="text" id="size" name="size"><br>
+        <label for="rating">Rating:</label>
+        <input type="text" id="rating" name="rating"><br>
+        <label for="image">Image:</label>
+        <input type="text" id="image" name="image">
+    </form>
+    <button id="submit">Submit</button>
+
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="{{url_for('static', filename='cupcakes.js')}}"></script>
+
+</body>
+</html>
